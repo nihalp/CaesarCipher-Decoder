@@ -6,6 +6,7 @@
 #include <fstream>
 #include <sstream>
 #include <utility>
+#include <cmath>
 using namespace std;
 
 static float default_freq[26] = {
@@ -110,7 +111,11 @@ int main(int argc, char const *argv[])
 			for (unsigned int j = 0; j < message.length(); j++) {
 				char c = message[j];
 				if (c >= 'A' && c <= 'Z') {
-					cout << (char)((c + analysis[i].first - 'A') % 26 + 'A');
+					char shifted = c - analysis[i].first;
+					if (shifted < 'A') {
+						shifted = 'Z' - ('A' - shifted - 1);
+					}
+					cout << shifted;
 				} else {
 					cout << c;
 				}
