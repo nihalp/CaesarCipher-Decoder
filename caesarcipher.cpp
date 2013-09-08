@@ -60,13 +60,11 @@ int main(int argc, char const *argv[])
 		stringstream buffer;
 		buffer << file.rdbuf();
 		string message(buffer.str());
-		cout << message << endl;
 
 		vector<float> char_freq(26, 0.0);
 		vector< pair<int, float> > analysis(26, make_pair(0, 0));
 		int totalchars = 0;
 
-		//cout << line << endl;
 		for (unsigned int i = 0; i < message.length(); i++) {
 			char c = message[i];
 			if (c >= 'A' && c <= 'Z') {
