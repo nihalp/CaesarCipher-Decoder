@@ -1,4 +1,7 @@
-Cipher
-======
+To build:
+Type "make"
 
-CS 461 MP1
+To run, type the following:
+"./caesarcipher FILE.txt"
+
+where FILE.txt should be replaced by the actual file that needs to be decoded

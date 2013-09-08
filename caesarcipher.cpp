@@ -6,7 +6,6 @@
 #include <fstream>
 #include <sstream>
 #include <utility>
-#include <windows.h>
 using namespace std;
 
 static float default_freq[26] = {
