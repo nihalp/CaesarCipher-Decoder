@@ -89,7 +89,7 @@ int main(int argc, char const *argv[])
 		for (int i = 0; i < 26; i++) {
 			analysis[i].first = i;
 			for (int j = 0; j < 26; j++) {
-				analysis[i].second += char_freq[i] * default_freq[(26 + j - i) % 26];
+				analysis[i].second += char_freq[j] * default_freq[(26 + j - i) % 26];
 			}
 			cout << "i=" << i << ": " << analysis[i].second << endl;
 		}
