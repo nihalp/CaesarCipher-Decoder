@@ -1,12 +1,9 @@
 
 #include <string>
 #include <vector>
-#include <algorithm>
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <utility>
-#include <cmath>
 using namespace std;
 
 int main(int argc, char const *argv[])
